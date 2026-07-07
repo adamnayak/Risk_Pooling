@@ -89,16 +89,7 @@ from nfip.config import Paths
 PATHS = Paths(base="/path/to/data")
 ```
 
-Processed intermediates used to regenerate the figures are archived at [DATA
-REPOSITORY / DOI].
-
 ## Reproducing the analysis
-
-Create the output directories before running:
-
-```bash
-mkdir -p Results Plots/Update Plots/New
-```
 
 Run the notebooks in dependency order:
 
@@ -122,13 +113,6 @@ attachment structures, coordinate systems, FIPS mappings, and the
 sociodemographic tables) are collected in `config.py`. Loaders in `data.py`
 return raw frames; derived quantities such as CPI-adjusted losses, event
 relabeling, and the state balance sheet are built in `preprocess.py`.
-
-## Citation
-
-If you use this code, please cite:
-
-```
-[BibTeX entry]
 ```
 
 ## License
@@ -137,4 +121,4 @@ If you use this code, please cite:
 
 ## Contact
 
-[Adam Nayak], [Columbia University] — [an3232@columbia.edu]
+Adam Nayak, Columbia University, an3232@columbia.edu
