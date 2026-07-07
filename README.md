@@ -7,6 +7,7 @@ Code accompanying:
 > DOI: `<add on publication>`
 >
 > Preprint available at: https://eartharxiv.org/repository/view/10790/
+---
 
 This repository reproduces the spatiotemporal flood-loss clustering, tropical
 cyclone attribution, state-balance clustering, and pool-solvency simulation used
