@@ -1,4 +1,4 @@
-# NFIP pool decentralization: clustering and simulation
+# NFIP Pooling Decentralization Simulation
 
 Code accompanying Nayak et al. 2026., FEMA Phase-Out? Catastrophic Extremes Challenge Decentralization of U.S. Flood Insurance. PNAS, Accepted. [DOI / link when available]
 
