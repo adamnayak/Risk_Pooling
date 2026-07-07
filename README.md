@@ -1,6 +1,6 @@
 # NFIP pool decentralization: clustering and simulation
 
-Code accompanying [PAPER TITLE], [Author list], *PNAS* (2025). [DOI / link when available]
+Code accompanying Nayak et al. 2026., FEMA Phase-Out? Catastrophic Extremes Challenge Decentralization of U.S. Flood Insurance. PNAS, Accepted. [DOI / link when available]
 
 This repository reproduces the spatiotemporal flood-loss clustering, tropical
 cyclone attribution, state-balance clustering, and pool-solvency simulation used
