@@ -118,11 +118,14 @@ attachment structures, coordinate systems, FIPS mappings, and the
 sociodemographic tables) are collected in `config.py`. Loaders in `data.py`
 return raw frames; derived quantities such as CPI-adjusted losses, event
 relabeling, and the state balance sheet are built in `preprocess.py`.
-```
+
+## Citation
+
+Please cite the PNAS article above if you use this code.
 
 ## License
 
-[LICENSE]. See `LICENSE` for details.
+See [`LICENSE`](LICENSE).
 
 ## Contact
 
