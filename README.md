@@ -137,4 +137,4 @@ If you use this code, please cite:
 
 ## Contact
 
-[Name], [Affiliation] — [email]
+[Adam Nayak], [Columbia University] — [an3232@columbia.edu]
