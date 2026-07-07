@@ -9,14 +9,13 @@ Code accompanying:
 > Preprint available at: https://eartharxiv.org/repository/view/10790/
 ---
 
+## Overview
+
+
 This repository reproduces the spatiotemporal flood-loss clustering, tropical
 cyclone attribution, state-balance clustering, and pool-solvency simulation used
 to evaluate decentralization of the U.S. National Flood Insurance Program (NFIP)
-into state and regional risk pools.
-
-## Overview
-
-The analysis proceeds in four stages, backed by a small Python package
+into state and regional risk pools. The analysis proceeds in four stages, backed by a small Python package
 (`nfip`) that holds the shared logic:
 
 1. **Claim clustering.** NFIP claims are grouped into spatiotemporal flood
