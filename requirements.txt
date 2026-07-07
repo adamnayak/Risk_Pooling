@@ -1,0 +1,17 @@
+# Core scientific stack
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+seaborn
+geopandas
+shapely
+requests
+openpyxl
+
+# Clustering / signal
+tslearn          # DTW distance (nfip.dtw_clustering)
+st-dbscan        # ST-DBSCAN (nfip.st_clustering)   -> imported as `st_dbscan`
+PyWavelets       # wavelet energy (nfip.dtw_clustering) -> imported as `pywt`
+tqdm
