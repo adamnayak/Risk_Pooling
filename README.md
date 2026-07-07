@@ -1,12 +1,17 @@
 # NFIP Pooling Decentralization Simulation
 
-Code accompanying Nayak et al. 2026., FEMA Phase-Out? Catastrophic Extremes Challenge Decentralization of U.S. Flood Insurance. PNAS, Accepted. [DOI / link when available]
+Code accompanying:
+
+> Nayak, A., et al. 2026., 2026. *AFEMA Phase-Out? Catastrophic Extremes Challenge Decentralization of U.S. Flood Insurance.*
+> *Proceedings of the National Academies of Sciences* (accepted).
+> DOI: `<add on publication>`
+>
+> Preprint available at: https://eartharxiv.org/repository/view/10790/
 
 This repository reproduces the spatiotemporal flood-loss clustering, tropical
 cyclone attribution, state-balance clustering, and pool-solvency simulation used
 to evaluate decentralization of the U.S. National Flood Insurance Program (NFIP)
-into state and regional risk pools, together with the code that generates the
-main-text figures.
+into state and regional risk pools.
 
 ## Overview
 
