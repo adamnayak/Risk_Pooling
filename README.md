@@ -14,8 +14,7 @@ Code accompanying:
 This repository reproduces the spatiotemporal flood-loss clustering, tropical
 cyclone attribution, state-balance clustering, and pool-solvency simulation used
 to evaluate decentralization of the U.S. National Flood Insurance Program (NFIP)
-into state and regional risk pools. The analysis proceeds in four stages, backed by a small Python package
-(`nfip`) that holds the shared logic:
+into state and regional risk pools. The analysis proceeds in four stages:
 
 1. **Claim clustering.** NFIP claims are grouped into spatiotemporal flood
    events using a temporal DBSCAN pass within quiet-period splits followed by
@@ -23,32 +22,32 @@ into state and regional risk pools. The analysis proceeds in four stages, backed
 2. **Storm attribution.** Clusters are matched to Atlantic tropical cyclone
    tracks (HURDAT2), and claims in clusters spanning more than one storm are
    partitioned with a space-time support vector classifier.
-3. **State-balance clustering.** Simulated per-state pool balances are grouped
-   with DTW-based hierarchical clustering and a co-association consensus across
-   simulations.
-4. **Pool simulation.** A year-resampled (historic, block-bootstrap, or random)
+3. **Pool simulation.** A year-resampled (historic, block-bootstrap, or random)
    balance-sheet simulation propagates event losses through federal and
    decentralized pool structures, with optional reinsurance and
    insurance-linked-securities (ILS) coverage.
+4. **State-balance clustering.** Simulated per-state pool balances are grouped
+   with DTW-based hierarchical clustering and a co-association consensus across
+   simulations.
 
 ## Repository structure
 
 ```
 .
-├── src/nfip/               # analysis package
+├── src/                    # source code
 │   ├── config.py           # paths, constants, and lookup tables
 │   ├── data.py             # data loaders
 │   ├── preprocess.py       # claim shaping, CPI adjustment, balance sheet
 │   ├── st_clustering.py    # temporal + ST-DBSCAN claim clustering
 │   ├── hurdat.py           # HURDAT2 parsing and storm-track attribution
-│   ├── dtw_clustering.py   # DTW / consensus / wavelet state clustering
+│   ├── dtw_clustering.py   # DTW-HC + consensus state clustering
 │   ├── simulation.py       # pool balance simulation with reinsurance and ILS
 │   └── plotting.py         # shared figure helpers
 ├── notebooks/
 │   ├── 01_cluster_update.ipynb   # claim clustering
 │   ├── 02_splitting.ipynb        # storm attribution and splitting
-│   ├── 03_dtw_clustering.ipynb   # state-balance consensus clustering
-│   ├── 04_simulation.ipynb       # pool simulation
+│   ├── 03_simulation.ipynb       # pool simulation
+│   ├── 04_dtw_clustering.ipynb   # state-balance consensus clustering
 │   ├── 05_fig1.ipynb             # Figure 1
 │   ├── 06_fig2.ipynb             # Figure 2
 │   ├── 07_fig3.ipynb             # Figure 3
@@ -99,9 +98,9 @@ Run the notebooks in dependency order:
 
 1. `01_cluster_update` and `02_splitting` produce the clustered, storm-attributed
    claim set.
-2. `04_simulation` runs the pool simulation and writes the balance-sheet outputs
+2. `03_simulation` runs the pool simulation and writes the balance-sheet outputs
    to `Results/`.
-3. `03_dtw_clustering` clusters the simulated state balances and writes the
+3. `04_dtw_clustering` clusters the simulated state balances and writes the
    consensus labels used in Figure 2.
 4. `05_fig1` through `08_fig4` render the main-text figures from the simulation
    outputs and consensus clusters.
