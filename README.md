@@ -105,10 +105,6 @@ Run the notebooks in dependency order:
 4. `05_fig1` through `08_fig4` render the main-text figures from the simulation
    outputs and consensus clusters.
 
-`01_cluster_update` additionally imports `sensitivity_analysis` from a local
-`ST_Cluster.py`; place that module on the path (for example in `src/`) before
-running the county-analysis cell, or remove that cell if it is not needed.
-
 ## Package notes
 
 Constants and lookup tables (inflation reference, reinsurance and ILS
