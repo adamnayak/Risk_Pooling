@@ -3,9 +3,7 @@
 Code accompanying:
 
 > Nayak, A., et al. 2026., 2026. *FEMA Phase-Out? Catastrophic Extremes Challenge Decentralization of U.S. Flood Insurance.*
-> DOI: `<add on publication>`
->
-> Preprint available at: https://eartharxiv.org/repository/view/10790/
+> Proceedings of the National Academy of Science 123 (34), e2537388123. DOI: www.pnas.org/doi/10.1073/pnas.2537388123
 ---
 
 ## Overview
